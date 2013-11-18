@@ -1,0 +1,43 @@
+label{
+	width: auto;
+}
+#longLabel{
+	width: auto;
+}
+body{
+	width: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#userInfo{
+	float: block;
+	width: auto;
+	height: 705px;
+	list-style: none;
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+#story {
+    float: left;
+	color: black;
+	background-color:yellow;
+	width: 600px;
+	height: 725px;
+	text-align: left;
+	padding-left: em;
+}
+div.ui-datepicker{
+	font-size:12px;
+}
+#dateCentered{
+	text-align: center;
+	display:inline-block;
+	margin:0 auto;
+}
+#spinner{
+	font-size: .97em;
+}
+
