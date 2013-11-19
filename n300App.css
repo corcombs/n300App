@@ -1,7 +1,5 @@
+
 label{
-	width: auto;
-}
-#longLabel{
 	width: auto;
 }
 body{
@@ -9,11 +7,12 @@ body{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: yellow;
 }
+
 #userInfo{
 	float: block;
 	width: auto;
-	height: 705px;
 	list-style: none;
 	background-color: green;
 	color: white;
@@ -21,23 +20,19 @@ body{
 	padding: 10px;
 }
 #story {
-    float: left;
+    float: block;
 	color: black;
 	background-color:yellow;
-	width: 600px;
-	height: 725px;
 	text-align: left;
 	padding-left: em;
 }
-div.ui-datepicker{
-	font-size:12px;
-}
-#dateCentered{
+#backButton{
+	float:block;
 	text-align: center;
-	display:inline-block;
-	margin:0 auto;
 }
-#spinner{
-	font-size: .97em;
+h1{
+background-color:white;
 }
+
+
 

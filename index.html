@@ -13,7 +13,7 @@ MODIFICATION HISTORY:
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>N300 App</title>
 	<link href="css/le-frog/jquery-ui-1.10.3.custom.css" rel="stylesheet">
@@ -21,7 +21,7 @@ MODIFICATION HISTORY:
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/jquery-ui-1.10.3.custom.js"></script>
 	<script type="text/javascript" src = "n300App.js"></script>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -30,21 +30,15 @@ MODIFICATION HISTORY:
 	<h1>A Mad Lib App</h1>
 	<div id="userInfo">
 	<h2>Please Fill Out This Form</h2>
-		<label>First Name:</label></br><input type="text" placeholder="First Name" id="firstName"><br/>
-		<label>Email:</label></br><input type="text" placeholder="Email" id="email"><br/>
-		<label id="longLabel">Please choose a position:</label><br/>
-		<div id="slider">
-			<a class="ui-slider-handle ui-stat-default ui-corner-all" href="#" ></a>
-		</div>
-		<label>Secret Word:</label></br><input type="password" id="password"></br>
-		<label>Telephone:</label></br><input type="tel" id="teleNum"></br>
-		<label>Favorite Number:</label></br><input id="spinner"></input></br>
-		<label>Favorite Candy Bar:</label></br><input type="text" id="autocomplete"></input></br>
-		<label>Meeting Date:</label><br/>
-		<div id="dateCentered"><div id="datepicker"></div></div><br/>
+	<form name="form" action="n300App.php" method="post">
+		<label>First Name:</label></br><input type="text" placeholder="First Name" name="firstName" id="firstName"><br/>
+		<label>Email:</label></br><input type="text" placeholder="Email" name="email" id="email"><br/>
+		<label>Secret Word:</label></br><input type="password" id="password" name="password"></br>
 		<input type="radio" name="rad" id="rad1" checked>Female<input type="radio" name="rad" id="rad2">Male<br/>
 		<label id="longLabel">Check if you are a Doctor: </label><input type="checkbox" id="chkBx"></br>
-		<button id="button" onClick="location.href='story.html';">Create a Story!</button>
+		<input type="hidden" name="prefix" id="prefix"></input>
+		<input type="submit" id="button" value="Create a Story"></input>
+	</form>
 	</div>
 </body>
 

@@ -21,7 +21,7 @@ MODIFICATION HISTORY:
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/jquery-ui-1.10.3.custom.js"></script>
 	<script type="text/javascript" src = "n300App.js"></script>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -30,8 +30,15 @@ MODIFICATION HISTORY:
 		<div id="story">
 		<h2>The Story!</h2>
 			<p id="theStory">
+				<?php echo "Hello ", $_POST["prefix"], " ", $_POST["firstName"], "! Your email is ", $_POST["email"], "and your password is ", $_POST["password"], "! Thank you!";?>
 			</p>
 		</div>
+		<footer>
+		<div id="backButton">
+				<button id="button" onclick="location.href='index.html'">Back</button>
+			</div>
+		
+		</footer>
 
 </body>
 
