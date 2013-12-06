@@ -13,10 +13,14 @@ MODIFICATION HISTORY:
  $("#button").click(createStory);
  function init(){
 		$("#button").button();
+		
+}
+function processResult(data, textStatus){
+	$("#story").html(data)
 }
 function createStory(){
 	var prefix = new String();
-	if($("#chkBx").is(":checked")){
+	/*if($("#chkBx").is(":checked")){
 		prefix = "Dr. ";
 	}else{
 		if($("#rad1").is(":checked")){
@@ -24,6 +28,12 @@ function createStory(){
 		}else{
 			prefix =	"Mr. ";
 		}
-	}
-	$("#prefix").html("prefix")
+	}*/
+	var name = $("#firstName").val();
+	var email = $("#email").val();
+	var password =$("#password").val();
+	$.get("n300App.php",{"password":password,"name":name,"email":email},processResult)
+
+
+
 }});

@@ -30,15 +30,19 @@ MODIFICATION HISTORY:
 	<h1>A Mad Lib App</h1>
 	<div id="userInfo">
 	<h2>Please Fill Out This Form</h2>
-	<form name="form" action="n300App.php" method="post">
+
+	<form name="form" id="form" method="POST">
 		<label>First Name:</label></br><input type="text" placeholder="First Name" name="firstName" id="firstName"><br/>
 		<label>Email:</label></br><input type="text" placeholder="Email" name="email" id="email"><br/>
 		<label>Secret Word:</label></br><input type="password" id="password" name="password"></br>
 		<input type="radio" name="rad" id="rad1" checked>Female<input type="radio" name="rad" id="rad2">Male<br/>
 		<label id="longLabel">Check if you are a Doctor: </label><input type="checkbox" id="chkBx"></br>
-		<input type="hidden" name="prefix" id="prefix"></input>
-		<input type="submit" id="button" value="Create a Story"></input>
+		<input type="button" id="button" value="Create a Story"></input>
 	</form>
+	
+	</div>
+	<div id="story">
+		Your story will be here!
 	</div>
 </body>
 
