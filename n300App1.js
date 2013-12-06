@@ -32,8 +32,6 @@ function createStory(){
 	var name = $("#firstName").val();
 	var email = $("#email").val();
 	var password =$("#password").val();
-	$.get("n300App.php",{"password":password,"name":name,"email":email},processResult)
-
-
+	$("#story").html("Hello "+name+"! Your email is "+email+" and your passowrd is "+password+"!")
 
 }});

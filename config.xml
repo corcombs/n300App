@@ -76,7 +76,7 @@
 
         Otherwise, you can specify specific domains:
     -->
-	<access origin="http://cs.iupui.edu/~corcombs/n300/n300App/" />
+<access origin="https://cs.iupui.edu/~corcombs/" subdomains="true" />
     <access origin="*"/> <!-- allow local pages -->
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
